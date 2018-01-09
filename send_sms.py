@@ -8,6 +8,6 @@ client = Client(account_sid, auth_token)
 
 client.messages.create(
 	to=os.environ["MY_PHONE_NUMBER"],
-	from_="+12243860666",
-	body="Don't forget to call your mother and tell her you love her."
+	from_=os.environ["TWILIO_PHONE_NUMBER"],
+	body="Don't forget to kiss your wife and tell her how amazing she is.",
 	)
